@@ -23,10 +23,10 @@ three(){
 }
 
 four(){
-    read word1
-    read word2
+    read -p "Enter word to be replace :" word1
+    read -p "Enter new word :" word2
     echo "changing occurences of $word1 to $word2 in file test.log"
-    sed "s/$word1/$word2/g" /home/csadmin/test.log
+    sed -i "s/$word1/$word2/g" /home/csadmin/test.log
 }
 
 five(){
