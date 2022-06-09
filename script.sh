@@ -34,6 +34,7 @@ five(){
     read -p "enter your IP address of instance : " IP 
     #read -p "enter your password" pass
     read -p "enter path to copy " path
+    #sshpass -p $pass scp /home/csadmin/test.log $user@$IP:$path
     scp /home/csadmin/test.log $user@$IP:$path
 }
 
